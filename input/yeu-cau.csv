@@ -1,0 +1,7 @@
+STT,Chức năng,Mô tả của khách
+1,Quản lý khách hàng,"Thêm, sửa, xóa khách hàng. Tìm theo tên, số điện thoại."
+2,Quản lý sản phẩm,"Danh sách sản phẩm, giá, tồn kho."
+3,Tạo đơn hàng,"Chọn khách hàng, thêm sản phẩm, tính tổng tiền. Khách VIP được giảm giá."
+4,Duyệt đơn,Đơn trên 50 triệu phải được quản lý duyệt.
+5,Hủy đơn,Khách được hủy đơn trước khi giao.
+6,Báo cáo,Doanh thu theo tháng.

@@ -1,0 +1,14 @@
+chuc_nang,loai_hang_muc,effort_thuc_te_gio,ghi_chu
+Quản lý khách hàng (dự án A),BE,14,"CRUD + tìm kiếm, có phân trang"
+Quản lý khách hàng (dự án A),FE,16,"Danh sách + form, validate"
+Quản lý khách hàng (dự án A),Test,8,Unit test + test API
+Tạo phiếu nhập kho (dự án B),BE,26,"Nhiều dòng chi tiết, cập nhật tồn kho trong transaction"
+Tạo phiếu nhập kho (dự án B),FE,20,"Form nhiều dòng, tính tổng tiền"
+Tạo phiếu nhập kho (dự án B),DB,4,Migration 2 bảng
+Tạo phiếu nhập kho (dự án B),Test,12,"Test giá trị biên, đồng thời"
+Phê duyệt đề xuất mua hàng (dự án C),BE,22,"Workflow 3 trạng thái, phân quyền theo vai trò"
+Phê duyệt đề xuất mua hàng (dự án C),FE,12,Màn hình danh sách chờ duyệt + nút duyệt/từ chối
+Phê duyệt đề xuất mua hàng (dự án C),Test,10,Test phân quyền và chuyển trạng thái
+Báo cáo doanh thu tháng (dự án A),BE,10,Truy vấn tổng hợp + xuất Excel
+Báo cáo doanh thu tháng (dự án A),FE,6,Bộ lọc tháng + bảng kết quả
+Báo cáo doanh thu tháng (dự án A),Test,4,So sánh với số liệu kế toán

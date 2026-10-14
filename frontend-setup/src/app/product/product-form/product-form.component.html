@@ -1,0 +1,44 @@
+<h2>{{ id() ? 'Sửa sản phẩm' : 'Thêm sản phẩm' }}</h2>
+
+@if (serverError()) {
+  <p class="error">{{ serverError() }}</p>
+}
+
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <label>
+    Mã sản phẩm
+    <input formControlName="code" placeholder="VD: SP-006" />
+  </label>
+  @if (hasError('code')) {
+    <p class="field-error">Mã bắt buộc, tối đa 30 ký tự, chỉ gồm chữ in hoa, số và dấu -</p>
+  }
+
+  <label>
+    Tên sản phẩm
+    <input formControlName="name" />
+  </label>
+  @if (hasError('name')) {
+    <p class="field-error">Tên bắt buộc, tối đa 200 ký tự</p>
+  }
+
+  <label>
+    Giá
+    <input type="number" formControlName="price" min="0" />
+  </label>
+  @if (hasError('price')) {
+    <p class="field-error">Giá bắt buộc và không được âm</p>
+  }
+
+  <label>
+    Tồn kho
+    <input type="number" formControlName="stock" min="0" />
+  </label>
+  @if (hasError('stock')) {
+    <p class="field-error">Tồn kho bắt buộc và không được âm</p>
+  }
+
+  <div class="actions">
+    <button type="submit" [disabled]="saving()">Lưu</button>
+    <a routerLink="/products">Hủy</a>
+  </div>
+</form>
